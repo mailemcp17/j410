@@ -1,15 +1,16 @@
 /* CSS Document */
+/* CSS Document */
 
 /*----------------PARALLAX IMAGE-----------------*/
 .parallax {
-	min-height: 450px;
+	min-height: 350px;
 	background: transparent;
-	padding-top: 35px;
+	padding-top: 0px;
 }
 
 body {
 	color: black; /*(default font color for the entire page)*/
-	font-family: 'Grenze', saraban;
+	font-family: 'Grenze','Baloo Tamma';
 	font-weight: 300; /*(font thickness)*/
 }
 
@@ -64,7 +65,7 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
     display: block;
-    padding: 0 20px;
+    padding: 0 10px;
     line-height: 105px;
     background-color: white;
     color: black;
@@ -73,8 +74,8 @@ nav ul li a:visited {
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-    background-color: black;
-    color: white;
+    background-color: #B3391C;
+    color: #B3391C;
 }
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -95,19 +96,19 @@ nav ul li ul li a {
 }	
 
 a.text:link, a.text:visited {
-    background-color:white;
-    color: white;
+    background-color:black;
+    color: black;
     padding: 4px 4px;
     text-align: center;
     text-decoration: none;
 }
 a.text:hover, a.text:active {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: #B35C26;
 }
 .row a{
-	color: #1e1f32;
-    font-family: "Grenze",sans-serif;
+	color: black;
+    font-family: "Grenze","Baloo Tamma";
     text-transform: uppercase;
     padding: .5rem 1rem;
     padding-right: 2rem;
@@ -121,15 +122,15 @@ a.text:hover, a.text:active {
     font-size: 16px;
     font-weight: 600;
     line-height: initial;
-    background: url(img/arrow.png) #a2ffe8;
+    background: url(img/arrow.png)white;
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: 96%;
 	text-decoration: none;
 }
 .row a:hover{
-	    background-color: #7D6F53;
-    color: initial;
+	    background-color:#B3391C;
+    color: black;
 	    text-decoration: none;
     transition: all 0.3s ease-in 0s;
 }
@@ -175,7 +176,7 @@ a.text:hover, a.text:active {
 	padding-left: 80px;
 	float: left;
 	color: #000000;
-	font-family: sans-serif;
+	font-family: "Baloo Tamma";
 	font-size: small;
   }
 	
@@ -247,13 +248,25 @@ a.text:hover, a.text:active {
     background-position: 50% 50%;
 }
 
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 /*----------------Main Content Area(this is where all the content below the navigation bar will go)--*/
 .row {
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 0; /*(centers content within the row)*/
 	position: relative;
-	padding: 65px 45px;
+	padding: 35px 35px;
     text-align: center;
 }
 
@@ -268,11 +281,11 @@ h1 {
 	line-height: 1.5;
 	text-transform: uppercase;
 	font-size: 16px;
-    color: lightgray;
+    color: #7F2E26;
 }
 
 h2 {
-	font-family: 'Raleway',sans-serif;
+	font-family:'El Messiri','Baloo Tamma';
     text-align: center;
     font-size: 55px;
     text-transform: uppercase;
@@ -330,8 +343,8 @@ filter: alpha(opacity=70)
 #alt-caption {
     background-color: black;
     color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: .9em;
+    font-family: 'Grenze', 'Baloo Tama';
+    font-size: 1.2em;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -350,7 +363,7 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	padding-left: 25px;
 	padding-right: 25px;
 	text-align: center;
@@ -360,7 +373,7 @@ footer {
 footer a {
 	text-decoration: none; /*(nullifies underline)*/
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Grenze','Baloo Tama';
 }
 /*(link color when moused over)*/
 footer a:hover {
@@ -391,17 +404,20 @@ footer a:hover {
     padding-right: 15px;
 }
 
+div { text-align: center; }
+ul { display: inline-block; text-align: left; }
+
 /*--------------background colors----------*/
 .whiteBG {
-	background-color: navajowhite;
+	background-color: #CBAF8C;
 }
 
 .blueBG {
-	background: #7D6F53;
+	background: #4D4235;
 }
 
 .orangeBG {
-	background: #FFC95C;
+	background: #D59A53;
 }
 
 /*----------------back to top button-----------------*/
@@ -413,12 +429,12 @@ footer a:hover {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: greenyellow; /* Set a background color */
+  background-color: white; /* Set a background color */
   color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Grenze', 'Baloo Tama';
   font-size: 10px; /* Increase font size */
 }
 
